@@ -1,3 +1,6 @@
 galletitas
 leche
+<<<<<<< HEAD
 coco
+=======
+>>>>>>> c299ce7be0123b66be451579d5506f5883b52359
