@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GATITOS EN ADOPCION</title>
+    <!--Aplicar un estilo a un bloque, en este caso sobre los h2-->
+    <link rel="stylesheet" href="C:\zzzfront\M1U3-CSS\tarea_u3.css">
+    <style>
+      h2{ 
+        color: blue;
+      }
+    </style>
 </head>
+
 <body>
-  <h1>GATITOS EN ADOPCION</h1>
+
+  <h1 style="color: orangered">GATITOS EN ADOPCION</h1>
+  <!--Estilo CSS aplicado en linea -->
+
     <main>
 
       <h2>Para ver mas gatitos en adopcion haz <a href="https://www.freepik.es/fotos-vectores-gratis/gatos" target="_blank" rel="noopener noopener">click aqui</a></h2>
@@ -31,25 +42,28 @@
       <hr> <!--LISTA HORIZONTAL-->
 
       <h3>La alimentacion de nuestros gatos</h3>
-      <p>Comidas que los gatos <strong>odian:</strong></p>
-      <!--LISTA NO ORDENADA // Aparecen los items con viñetas-->
-      <ul>
-        <li>citricos</li>
-        <li>platanos</li>
-        <li>pimienta</li>
-        <li>eucalipto</li>
-      </ul>
+ 
+      <div>  <!--CONTENEDOR DE OBJETOS, EN ESTE CASO DE LAS LISTAS-->
+        <p>Comidas que los gatos <strong>odian:</strong></p>
+        <!--LISTA NO ORDENADA // Aparecen los items con viñetas-->
+        <ul>
+          <li>citricos</li>
+          <li>platanos</li>
+          <li>pimienta</li>
+          <li>eucalipto</li>
+        </ul>
 
-      <p>Comidas que los gatos <strong>aman:</strong></p>
-      <!--LISTA ORDENADA // Aparecen los items numerados -->
-      <ol>
-        <li>menta gatuna</li>
-        <li>carne, pescado</li>
-        <li>huevos</li>
-        <li>zanahorias</li>
-        <li>zapallo</li>
-      </ol>
-      
+        <p>Comidas que los gatos <strong>aman:</strong></p>
+        <!--LISTA ORDENADA // Aparecen los items numerados -->
+        <ol>
+          <li>menta gatuna</li>
+          <li>carne, pescado</li>
+          <li>huevos</li>
+          <li>zanahorias</li>
+          <li>zapallo</li>
+        </ol>
+      </div>
+
       <p>Accede a <em><strong>Recetas saludables</em></strong> para tu gato</p>
       <a href="https://www.innaturale.com/es-es/comida-casera-para-gatos-8-recetas-rapidas-y-faciles" target="_blank"><img src="C:\zzzfront\M1U2-HTML\IMG\comidagato.jpg" alt="recetas comida enlace a pagina"></a>
       <!--LINEA ANTERIOR: Usar una imagen como ENLACE a elementros externos-->
@@ -66,16 +80,34 @@
       
         <!--Casillas de Verificacion permite seleccionar varias opciones si es necesario-->
         <p><strong>Comenta algunas caracteristicas de tu gato para ayudarnos</strong></p>  
-        <label for="Adulto"><input type="checkbox" id="Adulto" name="carac_adic">Adulto </label><br>
-        <label for="Bebe"><input type="checkbox" id="Bebe" name="carac_adic">Bebe </label><br>
-        <label for="Obeso"><input type="checkbox" id="Obeso" name="carac_adic">Obeso </label><br>
-        <label for="Urinaria"><input type="checkbox" id="Urinaria" name="carac_adic">Enfermedades Urinarias <br>
+        <label for="Adulto">
+          <input type="checkbox" id="Adulto" name="carac_adic" value="adulto">Adulto 
+        </label>
+        <br>
+        <label for="Bebe">
+          <input type="checkbox" id="Bebe" name="carac_adic" value="bebe">Bebe 
+        </label>
+        <br>
+        <label for="Obeso">
+          <input type="checkbox" id="Obeso" name="carac_adic" value="obeso">Obeso 
+        </label>
+        <br>
+        <label for="Urinaria">
+          <input type="checkbox" id="Urinaria" name="carac_adic" value="urinary">Enfermedades Urinarias 
+        </label>
+        <br>
         <br>
 
         <!--Botones de RADIO-->
         <label><strong>Acepta recibir las recetas por mail:</strong></label><br>
-        <label for="AceptaSi"><input type="radio" id="AceptaSi" name="aceptainfo">SI</label><br>
-        <label for="AceptaNo"><input type="radio" id="AceptaNo" name="aceptainfo">NO</label><br>
+        <label for="AceptaSi">
+          <input type="radio" id="AceptaSi" name="aceptainfo" value="receta_inf_si">SI
+        </label>
+        <br>
+        <label for="AceptaNo">
+          <input type="radio" id="AceptaNo" name="aceptainfo" value="receta_inf_no">NO
+        </label>
+        <br>
         <!--el for del Label debe coincidir con el id del input radio-->
         <!--los botones deben pertenecer al mismo grupo de elementos a traves del atributo name del input-->
         <!--de esta forma puedo seleccionar uno u otro boton de radio, pero nunca ambos al mismo tiempo-->
@@ -86,5 +118,12 @@
       </form>
 
     </main>
+
+    <hr> <!--LISTA HORIZONTAL-->
+
+    <footer>
+      <p><small>SIN DERECHOS DE AUTOR</small></p>
+    </footer>
+
 </body>
 </html>
