@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>GATITOS EN ADOPCION</h1>
+    <main>
+
+      <h2>Para ver mas gatitos en adopcion haz <a href="https://www.freepik.es/fotos-vectores-gratis/gatos" target="_blank" rel="noopener noopener">click aqui</a></h2>
+      <!--LINEA ANTERIOR: Parrafo con un ENLACE a pagina externa-->
+      <img src="C:\zzzfront\M1U2-HTML\IMG\gato.JPG" alt="gato atigrado">
+      
+      <h2>Algunas curiosidades sobre los felinos</h2>
+      <a href="#parrafo-1">Parrafo 1</a>
+      <a href="#parrafo-2">Parrafo 2</a>
+      <a href="#parrafo-3">Parrafo 3</a>
+      <!--LINEA ANTERIOR: Parrafo con ENLACE a elementros de la misma pagina-->
+
+      <h3 id="parrafo-1">Los platos profundos no les gustan</h3>
+      <p>Este es un tema del que no se habla demasiado. La profundidad del plato de comida de nuestra mascota no suele ser algo en lo que pensamos cuando vamos a comprarlos. Sin embargo, debería ser una de las cosas más importantes a tener en cuenta, ya que los que son profundos pueden molestar mucho a los gatos. Sus bigotes son sensibles y si lo rozan mientras comen, les causa una sensación poco agradable.</p> 
+      
+      <h3 id="parrafo-2">A la mayoría de los gatos no les gusta que les froten la barriga</h3>
+      <p lang="en">Es posible que tu gato deje que le frotes la barriga y, si lo hace, es señal de que confía en ti. Sin embargo, a la mayoría de los felinos no les gustan ese tipo de caricias, sobre todo si las hacen personas con las que no están familiarizados. La razón principal es que es uno de los puntos más vulnerables de su cuerpo. Por lo tanto, suele ser una buena idea evitar tocarles esa zona, por lo menos hasta que confíen en ti.</p>
+      
+      <h3 id="parrafo3">Evita ponerle con collares de cascabel</h3>
+      <p>Un pequeño cascabel en el collar puede ayudarte a saber dónde está, incluso cuando no puedes verlo. También pueden ayudar a que otros animales, como pájaros o ratones, no se conviertan en su tentempié. Sin embargo, tiene su inconveniente. Los gatos tienen un oído bastante sensible, y los cascabeles tienden a molestarlos. Lo más seguro es que también te irritaría si tuvieras que andar todo el día con uno atado al cuello.</p>
+
+      <hr> <!--LISTA HORIZONTAL-->
+
+      <h3>La alimentacion de nuestros gatos</h3>
+      <p>Comidas que los gatos <strong>odian:</strong></p>
+      <!--LISTA NO ORDENADA // Aparecen los items con viñetas-->
+      <ul>
+        <li>citricos</li>
+        <li>platanos</li>
+        <li>pimienta</li>
+        <li>eucalipto</li>
+      </ul>
+
+      <p>Comidas que los gatos <strong>aman:</strong></p>
+      <!--LISTA ORDENADA // Aparecen los items numerados -->
+      <ol>
+        <li>menta gatuna</li>
+        <li>carne, pescado</li>
+        <li>huevos</li>
+        <li>zanahorias</li>
+        <li>zapallo</li>
+      </ol>
+      
+      <p>Accede a <em><strong>Recetas saludables</em></strong> para tu gato</p>
+      <a href="https://www.innaturale.com/es-es/comida-casera-para-gatos-8-recetas-rapidas-y-faciles" target="_blank"><img src="C:\zzzfront\M1U2-HTML\IMG\comidagato.jpg" alt="recetas comida enlace a pagina"></a>
+      <!--LINEA ANTERIOR: Usar una imagen como ENLACE a elementros externos-->
+      
+      <hr>
+      <h3>Dejanos tus datos para recibir mas informacion</h3>
+      <form action="/archivo_rta.txt">
+        
+        <!--Casillas para el ingreso de texto-->
+        <label>NOMBRE: <input type="text" placeholder="Ingresa tu nombre" required></label><br>
+        <label>APELLIDO:<input type="text" placeholder="Ingresa tu apellido" required></label><br>
+        <label>E-MAIL: <input type="text" placeholder="Ingresa tu e-mail" required></label><br>
+        <br>
+      
+        <!--Casillas de Verificacion permite seleccionar varias opciones si es necesario-->
+        <p><strong>Comenta algunas caracteristicas de tu gato para ayudarnos</strong></p>  
+        <label for="Adulto"><input type="checkbox" id="Adulto" name="carac_adic">Adulto </label><br>
+        <label for="Bebe"><input type="checkbox" id="Bebe" name="carac_adic">Bebe </label><br>
+        <label for="Obeso"><input type="checkbox" id="Obeso" name="carac_adic">Obeso </label><br>
+        <label for="Urinaria"><input type="checkbox" id="Urinaria" name="carac_adic">Enfermedades Urinarias <br>
+        <br>
+
+        <!--Botones de RADIO-->
+        <label><strong>Acepta recibir las recetas por mail:</strong></label><br>
+        <label for="AceptaSi"><input type="radio" id="AceptaSi" name="aceptainfo">SI</label><br>
+        <label for="AceptaNo"><input type="radio" id="AceptaNo" name="aceptainfo">NO</label><br>
+        <!--el for del Label debe coincidir con el id del input radio-->
+        <!--los botones deben pertenecer al mismo grupo de elementos a traves del atributo name del input-->
+        <!--de esta forma puedo seleccionar uno u otro boton de radio, pero nunca ambos al mismo tiempo-->
+        <br>
+        <button type="submit">Enviar</button>
+        
+
+      </form>
+
+    </main>
+</body>
+</html>
